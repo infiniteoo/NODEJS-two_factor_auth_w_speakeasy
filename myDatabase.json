@@ -1,1 +1,13 @@
-{"user":{"9efd48af-5293-4761-87ec-ad8c09054d08":{"id":"9efd48af-5293-4761-87ec-ad8c09054d08"}}}
+{
+  "user": {
+    "e09fb5ee-7ef4-4332-ac51-f67a9f108663": {
+      "id": "e09fb5ee-7ef4-4332-ac51-f67a9f108663",
+      "temp_secret": {
+        "ascii": ":G>e3xUAPAz{0IbkV4!B4[uZOt/w<h0!",
+        "hex": "3a473e653378554150417a7b3049626b56342142345b755a4f742f773c683021",
+        "base32": "HJDT4ZJTPBKUCUCBPJ5TASLCNNLDIIKCGRNXKWSPOQXXOPDIGAQQ",
+        "otpauth_url": "otpauth://totp/SecretKey?secret=HJDT4ZJTPBKUCUCBPJ5TASLCNNLDIIKCGRNXKWSPOQXXOPDIGAQQ"
+      }
+    }
+  }
+}

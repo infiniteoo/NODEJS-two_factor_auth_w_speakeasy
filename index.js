@@ -19,7 +19,8 @@ app.post("/api/register", (req, res) => {
   try {
     const path = `/user/${id}`;
     const temp_secret = speakeasy.generateSecret();
-    db.push(path, { id });
+    console.log(temp_secret);
+    db.push(path, { id, temp_secret });
     res.json({ id, secret: temp_secret.base32 });
   } catch (error) {
     console.log(error);
