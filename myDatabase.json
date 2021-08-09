@@ -17,6 +17,15 @@
         "base32": "IFWVWQLTF5WW42DLN4UFCTBPNE7CGLRFEMSTENLHLZVW6OJZG5EA",
         "otpauth_url": "otpauth://totp/SecretKey?secret=IFWVWQLTF5WW42DLN4UFCTBPNE7CGLRFEMSTENLHLZVW6OJZG5EA"
       }
+    },
+    "b5fd6edd-92f8-4619-b552-eaf095a3be96": {
+      "id": "b5fd6edd-92f8-4619-b552-eaf095a3be96",
+      "secret": {
+        "ascii": "9NTRvDJ)z5o8k3!18OQ{9OU<uN[ErIvE",
+        "hex": "394e545276444a297a356f386b332131384f517b394f553c754e5b4572497645",
+        "base32": "HFHFIUTWIRFCS6RVN44GWMZBGE4E6UL3HFHVKPDVJZNUK4SJOZCQ",
+        "otpauth_url": "otpauth://totp/SecretKey?secret=HFHFIUTWIRFCS6RVN44GWMZBGE4E6UL3HFHVKPDVJZNUK4SJOZCQ"
+      }
     }
   }
 }

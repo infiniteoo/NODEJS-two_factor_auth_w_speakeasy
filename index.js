@@ -54,6 +54,31 @@ app.post("/api/verify", (req, res) => {
   }
 });
 
+// validate token
+app.post("/api/validate", (req, res) => {
+  const { token, userId } = req.body;
+  try {
+    const path = `/user/${userId}`;
+    const user = db.getData(path);
+    const { base32: secret } = user.secret;
+    const tokenValidate = speakeasy.totp.verify({
+      secret,
+      encoding: "base32",
+      token: token,
+      window: 1,
+    });
+
+    if (tokenValidates) {
+      res.json({ validated: true });
+    } else {
+      res.json({ validated: false });
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Error finding user" });
+  }
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server is live on port ${PORT}`));
